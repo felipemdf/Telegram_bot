@@ -16,10 +16,10 @@ const Disciplines = connection.define('discipline',{
 });
 
 
-/* 
-Disciplines.sync({force: false}).then(() =>{
+
+Disciplines.sync().then(() =>{
     console.log("table has been created");
 })
-*/
+
 
 module.exports = Disciplines; 

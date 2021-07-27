@@ -20,10 +20,10 @@ const Activities = connection.define('activity',{
 });
 
 
-/*
-Activities.sync({force: false}).then(() =>{
+
+Activities.sync().then(() =>{
     console.log("table has been created");
 })
-*/
+
 
 module.exports = Activities; 
