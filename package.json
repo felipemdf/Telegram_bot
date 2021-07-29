@@ -1,21 +1,13 @@
 {
-  "name": "telegram_bot",
+  "name": "nova-pasta",
   "version": "1.0.0",
-  "description": "Telegram bot",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/felipemdf/Telegram_bot.git"
-  },
-  "author": "felipemdf",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/felipemdf/Telegram_bot/issues"
-  },
-  "homepage": "https://github.com/felipemdf/Telegram_bot#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
     "mysql2": "^2.2.5",

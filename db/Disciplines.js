@@ -1,5 +1,7 @@
 const Sequelize = require ('sequelize');
 const connection = require ('./Database');
+const Activities = require("./Activities");
+
 const Disciplines = connection.define('discipline',{
     name:{
         type: Sequelize.STRING,
@@ -16,6 +18,9 @@ const Disciplines = connection.define('discipline',{
 });
 
 
+//Relationship
+Activities.belongsTo(Disciplines); //1 articles for 1 category (1-1)
+Disciplines.hasMany(Activities); //N categories for 1 article (1-N)
 
 Disciplines.sync().then(() =>{
     console.log("table has been created");
